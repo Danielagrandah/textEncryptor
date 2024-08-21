@@ -1,0 +1,145 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Orbitron:wght@400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root {
+  --primary--color: hwb(202 1% 71% / 0.9);
+  --second--color: rgba(108, 141, 161, 0.623);
+  --third--color: rgba(0, 195, 255, 0.87);
+  --text--color: rgb(236, 236, 236);
+
+  --primary-font: "Orbitron", sans-serif;
+  --second--font: 'Georgia', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+  }
+
+body{
+    background-image: url('img/background.jpg');
+    background-size: cover; /* Hace que la imagen cubra todo el body */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-attachment: fixed; /* La imagen de fondo permanece fija en la pantalla */
+    font-family: var(--second-font);
+    font-size: 20px;
+    line-height: 1.5;
+    color: var(--second--color);
+    justify-content: space-between;
+    align-items: center;
+}
+.orbitron-container {
+    font-family: var(--primary-font);
+    font-optical-sizing: auto;
+    font-size: 50px;
+    font-style: normal;
+    color: var(--text--color);
+    max-width: fit-content;
+  }
+  .container-body{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    padding: 10px;
+  }
+  .container-left {
+    display: flex;
+    flex-direction: column;
+    justify-content:first baseline;
+    text-align: center;
+    padding: 50px;
+    background-color: var(--primary--color); /* Fondo oscuro para el contenedor */
+    border: 1px solid var(--text--color); /* Borde ligero */
+    box-shadow: 0 0 10px var(--third--color); /* Sombra para dar profundidad */
+    border-radius: 10px; /* Bordes redondeados */
+    margin-left: 50px;
+    margin-top: 50px;
+    margin-bottom: 5px;
+    margin-right: 20px;
+    box-sizing: border-box;
+    padding: 20px;
+   } 
+
+   input{
+    background-color: transparent;
+    font-family: var(--second-font);
+    font-size: 20px;
+    width: 100%;
+    height: 60%;
+    border: 1px solid #dddddd00; /* Borde ligero */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 15px;
+    color: var(--text--color);
+  }
+
+    .container-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    text-align: center;
+    background-color: var(--primary--color); /* Fondo blanco para el contenedor */
+    border: 1px solid var(--text--color); /* Borde ligero */
+    box-shadow: 0 0 10px var(--third--color); /* Sombra para dar profundidad */
+    border-radius: 10px; /* Bordes redondeados */
+    margin-left: 20px;
+    margin-top: 50px;
+    margin-bottom: 5px;
+    margin-right: 200px;
+    margin-right: 100px;
+    box-sizing: border-box;
+    padding: 20px;
+
+    }
+    .container-button{
+
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+        
+        
+    }
+
+    .funtionbutton{
+        display: flex;
+        width: 300px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        border-radius: 8px;
+        font-size: 24px;
+        font-weight: 300;
+        padding: 20px 20px;
+        text-decoration: none;    
+        font-family: var(--primary-font);
+        border: 2px solid var(--third--color);
+        margin: 10px;
+        color: var(--text--color);
+        background-color: transparent;
+        
+            
+    }
+
+    .funtionbutton:hover{
+        background: var(--primary--color);
+    }
+
+
+    img {
+        mask-image: linear-gradient(
+          black 80%,
+          transparent
+        );
+        float: center;
+        border-radius: 5%;
+        width: 100%;
+        display: flex;
+        flex-direction: center; /* Hace que la imagen y los botones se apilen verticalmente */
+        align-items: center; /* Centra la imagen y los botones horizontalmente */
+        margin: 10px;
+      }
+
+    
+      
